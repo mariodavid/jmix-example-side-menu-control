@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<menu-config xmlns="http://jmix.io/schema/ui/menu">
+
+
+    <item screen="Customer.browse"
+          caption="msg://de.diedavids.jmix.example.sidemenucontrol.screen.customer/customerBrowse.menu"/>
+
+    <menu id="application" caption="msg://de.diedavids.jmix.example.sidemenucontrol/menu.application">
+        <item screen="themeSettingsScreen" caption="msg://io.jmix.ui.app.themesettings/themeSettings.caption"/>
+    </menu>
+    <menu id="administration">
+
+        <!--
+        1. change item order
+        -->
+        <item screen="sec_RowLevelRoleModel.browse"
+              caption="msg://io.jmix.securityui/menu.sec_RowLevelRoleModel.browse"/>
+
+        <!--
+        2. remove items
+        <item screen="ui_JmxConsoleScreen"/>
+        -->
+
+        <!--
+        3. change item caption
+        -->
+        <item screen="sec_ResourceRoleModel.browse"
+              caption="msg://de.diedavids.jmix.example.sidemenucontrol/myResourceRoleCaption"/>
+
+        <!--
+        4. put item into administration
+        -->
+        <item screen="User.browse"
+              caption="msg://de.diedavids.jmix.example.sidemenucontrol.screen.user/UserBrowse.caption"/>
+    </menu>
+
+
+    <!--
+    4. put items to the top menu
+    -->
+    <item id="report_Report.run" caption="msg://io.jmix.reportsui/menu.report_Report.run"/>
+
+    <menu id="reports" caption="msg://io.jmix.reportsui/menu.reports">
+        <item id="report_Report.browse" caption="msg://io.jmix.reportsui/menu.report_Report.browse"/>
+        <item id="report_ReportGroup.browse" caption="msg://io.jmix.reportsui/menu.report_ReportGroup.browse"/>
+        <item id="report_ShowChart.screen" caption="msg://io.jmix.reportsui/menu.report_ShowChart.screen"/>
+        <item id="report_ShowReportTable.screen" caption="msg://io.jmix.reportsui/menu.report_ShowReportTable.screen"/>
+        <item id="report_ShowPivotTable.screen" caption="msg://io.jmix.reportsui/menu.report_ShowPivotTable.screen"/>
+    </menu>
+
+</menu-config>
